@@ -25,7 +25,7 @@
 
 using namespace std;
 
-void prime_Fact ( long long n){
+void prime_Fact ( long long n){ // Hàm phân tích TSNT
     int pow;
     long long  ft = 2;
     while (ft*ft  <= n){
@@ -47,7 +47,7 @@ void prime_Fact ( long long n){
         cout << n << "^1";
 }
 
-//===================================
+//=======================================
 int main ()
 {
     FAST_IO;
@@ -56,3 +56,19 @@ int main ()
     prime_Fact(n);
     return (0-0);
 }
+//========================================
+// Step:
+// 	. j (là hệ số của tsnt) 
+// 	. pow (là số mũ) 
+// 	------------------------------------------------------
+// 	. j bắt đầu từ 2 -> giá trị tối đa cho phép là sqrt(n)
+
+// 		. Nếu n chia hết cho j 
+// 			. Kiểm tra số mũ tối đa có thể của hệ số j
+		
+// 		. Nếu pow khác 0
+// 			. In số
+
+// 		. Tăng j
+
+// 	. Nếu n còn lại khác 0, in ra tích thừa số n cuối cùng (^1)
