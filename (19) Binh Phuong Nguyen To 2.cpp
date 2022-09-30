@@ -28,6 +28,7 @@ using namespace std;
 bool check(int n){
     int i = 2, pow = 0;
     while( i*i <= n){
+        pow = 0;
         while(n % i == 0){ // 27 % 3 = 0, % 9 = 0
             pow ++;
             n /= i;
