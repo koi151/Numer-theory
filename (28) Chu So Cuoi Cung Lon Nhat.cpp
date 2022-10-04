@@ -26,7 +26,7 @@
 
 using namespace std;
 
-bool seive(bool prime[], int maxn){
+void seive(bool prime[], int maxn){
     for (int i = 2; i <= maxn; i ++)
         prime[i] = true;
     prime[0] = prime[1] = false;
